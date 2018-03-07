@@ -2,13 +2,13 @@
 
 const int PIR_PIN = 1;
 const int TX_PIN = 2;
-char *controller;
+const int TX_SPEED = 4000;
 
 void setup() {
   pinMode(PIR_PIN, INPUT);
   vw_set_ptt_inverted(true);
   vw_set_tx_pin(TX_PIN);
-  vw_setup(4000);
+  vw_setup(TX_SPEED);
 }
 
 void loop() {
