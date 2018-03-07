@@ -18,5 +18,5 @@ void loop() {
   vw_send((uint8_t *)message, strlen(message));
   vw_wait_tx();
 
-  delay(1);        // delay in between reads for stability
+  delay(1);
 }
